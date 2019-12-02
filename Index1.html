@@ -1,0 +1,34 @@
+<h1>Belajar HTML</h1>
+<h2>Menghitung luas segitiga</h2>
+<div id="content">
+Alas : <input id="alas"><br>
+Tinggi : <input id="tinggi"><br>
+	<input type="submit" value="Hitung" onclick="hitungLuasSegitiga()">
+	<div id="hasil">
+	
+	</div>
+
+
+</div>
+
+<h2>Menghitung luas segiempat</h2>
+<div id="content">
+Sisi : <input id="sisi"><br>
+	<input type="submit" value="Hitung" onclick="hitungLuasSegiempat()">
+	<div id="hasil-2">
+	
+	</div>
+	
+</div>
+
+<script>
+	function hitungLuasSegitiga(){
+		var a = document.getElementById('alas').value;
+		var t = document.getElementById('tinggi').value;
+		var hasil = document.getElementById('hasil');
+		var luas = (a * t)/2;
+		hasil.innerText = luas;
+		console.log(luas);
+	}
+	
+</script>
